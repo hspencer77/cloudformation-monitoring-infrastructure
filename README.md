@@ -1,0 +1,2 @@
+# cloudformation-monitoring-infrastructure
+Cloudformation template to deploy a highly available, fault tolerant custom monitoring infrastructure on AWS. The monitoring infrastructure includes the following: RDS Aurora cluster, Elasticache cluster, and Grafana Web cluster (Auto Scaling Group) - which sits behind an Elastic Load Balancer. The Grafana configuration is vanilla - meaning its using the default authentication mechanism, data sources are not configured.  Any data source can be used, but by default, AWS CloudWatch can be configured through the Grafana Web Interface.
